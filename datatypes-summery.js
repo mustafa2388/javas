@@ -38,4 +38,35 @@ const myFunction = function () {
     console.log("Hello World")
 }
 
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
+
+// ==================*******************================================//
+
+// Stack (primitive), and Heap (non-primitive) Memory
+
+// jb stack meemory use huta hy waha ap ko jo b variable declear kiya ha waha us ki copy milti hy 
+
+// and jaha heeep memory use hoti hy waha ap ko jo b variable declear kiya ha waha us ka reference milta hy 
+
+// Example
+
+let myName = "Mustafa"
+let yourName = myName
+
+anotherName = "Noor"
+console.log(myName) // Mustafa
+console.log(anotherName)
+console.log(yourName) // Mustafa
+
+
+let userOne = {
+    email: "abc@gmail.com",
+    payId: "user123"
+}
+
+let userTwo = userOne
+userTwo.email = "xyyz@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
