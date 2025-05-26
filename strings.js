@@ -14,6 +14,7 @@ const myName = new String('Mustafa-Noor-enggineer')
 console.log(myName.charAt(4))
 console.log(myName.indexOf('a'))
 
+
 const newString = myName.substring(0, 9)
 console.log(newString)
 
