@@ -1,42 +1,42 @@
-// // Object literals///
+// Object literals///
 
-// const { use } = require("react")
+const { use } = require("react")
 
-// const sym = Symbol("Key1")
+const sym = Symbol("Key1")
 
-// const User = {
-//     name: "Mustafa",
-//     [sym]: "myKey1",
-//     "fullName": "Mustafa Noor",
-//     age: 23,
-//     location: "Peshawar",
-//     email: "Mustafa12@gmail.com",
-//     isLoggedIn: false,
+const User = {
+    name: "Mustafa",
+    [sym]: "myKey1",
+    "fullName": "Mustafa Noor",
+    age: 23,
+    location: "Peshawar",
+    email: "Mustafa12@gmail.com",
+    isLoggedIn: false,
 
-// }
+}
 
-// console.log(User.email)
-// console.log(User["email"])
-// console.log(User["fullName"])
-// console.log(User[sym])
+console.log(User.email)
+console.log(User["email"])
+console.log(User["fullName"])
+console.log(User[sym])
 
-// User.email = "Salman@gmail.com"
-// // Object.freeze(User)
-// User.email = "Hello@gmail.com"
-// console.log(User)
+User.email = "Salman@gmail.com"
+// Object.freeze(User)
+User.email = "Hello@gmail.com"
+console.log(User)
 
-// User.greeting = function () {
-//     console.log("Hello User")
-// }
+User.greeting = function () {
+    console.log("Hello User")
+}
 
-// User.greetingTwo = function () {
-//     console.log(`Hello User, ${this.name}`)
-// }
+User.greetingTwo = function () {
+    console.log(`Hello User, ${this.name}`)
+}
 
-// console.log(User.greeting())
-// console.log(User.greetingTwo())
+console.log(User.greeting())
+console.log(User.greetingTwo())
 
-/////Singleton/// OR Constructor
+///Singleton/// OR Constructor
 
 
 
