@@ -29,3 +29,14 @@
 //     console.log("User logged in from Google or Email")
 // }
 
+const num = 90
+const num2 = 80
+
+if (num == 90) {
+    console.log("User giive a rate")
+} else if (num == 80) {
+    console.log("user give number for votinng")
+}
+else {
+    console.log("Its done")
+}
