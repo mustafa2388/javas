@@ -61,4 +61,74 @@ const books = [
 const userBooks = books.filter((bk) => {
     return bk.publishe >= 2000 && bk.genre === 'History'
 })
-console.log(userBooks)
+// console.log(userBooks)
+
+
+
+
+//MOREE AOUT MAP//
+
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// const newNums = myNumbers.map((num) => num + 10)
+// console.log(newNums)
+
+// const newNums = myNumbers.map((num) => { return num + 10 })
+// console.log(newNums)
+
+// const newNn = myNumbers.forEach((num) => {
+//     myNumbers.push(num + 10)
+
+// })
+// console.log(myNumbers)
+
+const newNums = myNumbers
+    .map((num) => num * 10)
+    .map((num) => num + 1)
+    .filter((num) => num >= 40)
+
+// console.log(newNums)
+
+
+
+//  REDUCE METHOD //
+
+
+const myNumArr = [1, 2, 3]
+
+// const myTotal = myNumArr.reduce(function (acc, carval) {
+
+//     console.log(`acc: ${acc} and curval: ${carval}`)
+//     return acc + carval
+// }, 0)
+
+const myTotal = myNumArr.reduce((acc, curval) => acc + curval, 0)
+
+console.log(myTotal)
+
+const myCurr = [
+    {
+        courseNamee: "py course",
+        price: 6000
+    },
+    {
+        courseNamee: "DS course",
+        price: 3000
+    },
+    {
+        courseNamee: "SW course",
+        price: 2000
+    },
+    {
+        courseNamee: "java course",
+        price: 1000
+    },
+]
+
+const priceToPay = myCurr.reduce((acc, item) => acc + item.price, 0)
+console.log(priceToPay)
+
+
+
+
+
