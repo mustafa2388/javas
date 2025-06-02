@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit-remove-element.html</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Java")
+    addLanguage("Swift")
+
+    function optiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    optiLanguage('typescript')
+
+    // EDIT ELEENNT
+    const seecondLang = document.querySelector("li:nth-child(2)")
+    // seecondLang.innerHTML = "Hello"
+
+    const newli = document.createElement('li')
+    newli.textContent = "Hello"
+    seecondLang.replaceWith(newli)
+
+    //edit
+
+    const firstLang = document.querySelector("l1:first-child")
+    firstLang.outerHTML = '<li>JavaScript</li>'
+
+    //remove 
+
+    const lastLang = document.querySelector('l1: last-child')
+    lastLang.remove()
+</script>
+
+</html>
